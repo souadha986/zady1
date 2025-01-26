@@ -25,7 +25,7 @@ class WelcomePage extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: CustomTextWidget(
-                  text: 'Are youuuuuuuuu ?',
+                  text: 'Are you ?',
                   width: 200,
                   height: 70,
                   fontFamily: 'Lobster',
