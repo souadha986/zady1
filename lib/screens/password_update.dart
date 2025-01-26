@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:app/widgets/custom_image_widget.dart';
-import 'package:app/widgets/custom_text_widget.dart';
+import 'package:flutter_application_2/widgets/custom_image_widget.dart';
+import 'package:flutter_application_2/widgets/custom_text_widget.dart';
 
 class PasswordUpdate extends StatelessWidget {
   const PasswordUpdate({super.key});
@@ -15,7 +15,7 @@ class PasswordUpdate extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 150),
-               Center(
+              Center(
                 child: CustomTextWidget(
                   text: 'Password Updated',
                   width: double.infinity,
@@ -25,22 +25,20 @@ class PasswordUpdate extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   textAlign: TextAlign.center,
                   color: Colors.white,
-                  decoration: TextDecoration.none, 
-                 decorationColor:Colors.white ,
+                  decoration: TextDecoration.none,
+                  decorationColor: Colors.white,
                 ),
               ),
-              
               const SizedBox(height: 50),
-               Center(
+              Center(
                 child: CustomImageWidget(
                   imagePath: 'assets/login/cercle.png',
                   width: 200,
                   height: 200,
                 ),
               ),
-               
               const SizedBox(height: 40),
-               Center(
+              Center(
                 child: CustomTextWidget(
                   text: 'Your password has been updated',
                   width: 350,
@@ -50,37 +48,36 @@ class PasswordUpdate extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   textAlign: TextAlign.center,
                   color: Colors.white,
-                  decoration: TextDecoration.none, 
-                 decorationColor:Colors.white ,
+                  decoration: TextDecoration.none,
+                  decorationColor: Colors.white,
                 ),
               ),
-
-              
               const SizedBox(height: 100),
-               Center(
+              Center(
                 child: TextButton(
-                onPressed: () {
-               Navigator.pushNamed(context, '/signin');
-               },
-                style: TextButton.styleFrom(
-               backgroundColor: Colors.white,
-               shape: RoundedRectangleBorder(
-               borderRadius: BorderRadius.circular(30) ),
-               padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10) ),
-               child: CustomTextWidget(
-                text: "Sign In",
-                color: const Color(0xFF013220),
-                width: double.infinity,
-                height: 35,
-                fontFamily: 'Lobster',
-                fontSize: 24,
-               fontWeight: FontWeight.w400,
-               textAlign: TextAlign.center,
-               decoration: TextDecoration.none, 
-                 decorationColor:Colors.white ,
-               ),
-             ),
-            ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/signin');
+                  },
+                  style: TextButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 70, vertical: 10)),
+                  child: CustomTextWidget(
+                    text: "Sign In",
+                    color: const Color(0xFF013220),
+                    width: double.infinity,
+                    height: 35,
+                    fontFamily: 'Lobster',
+                    fontSize: 24,
+                    fontWeight: FontWeight.w400,
+                    textAlign: TextAlign.center,
+                    decoration: TextDecoration.none,
+                    decorationColor: Colors.white,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

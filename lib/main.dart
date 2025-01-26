@@ -1,10 +1,11 @@
-import 'package:app/screens/check_email.dart';
-import 'package:app/screens/password_update.dart';
-import 'package:app/screens/reset_password.dart';
-import 'package:app/screens/set_new_password.dart';
-import 'package:app/screens/sign_in.dart';
-import 'package:app/screens/welcome_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/screens/check_email.dart';
+import 'package:flutter_application_2/screens/password_update.dart';
+import 'package:flutter_application_2/screens/reset_password.dart';
+import 'package:flutter_application_2/screens/sign_in.dart';
+import 'package:flutter_application_2/screens/welcome_page.dart';
+
+import 'screens/set_new_password.dart';
 
 void main() {
   runApp(MyApp());
