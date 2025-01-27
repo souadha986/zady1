@@ -18,6 +18,7 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: Colors.blue,
       decoration: InputDecoration(
         prefixIcon: 
         Padding(
@@ -43,8 +44,11 @@ class CustomTextFormField extends StatelessWidget {
                  borderRadius: BorderRadius.circular(50),
                  borderSide: BorderSide(color: Colors.white)
                 ),
-                 
-             ),
+              focusedBorder: OutlineInputBorder(
+             borderSide: BorderSide(color: Colors.blue),
+            borderRadius: BorderRadius.circular(50),
+          )      
+      ),
     );
   }
 }
