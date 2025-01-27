@@ -27,7 +27,11 @@ class SignUp extends StatelessWidget {
               const SizedBox(height: 10),
               const Center(
                 child: CustomTextWidget(
+<<<<<<< Updated upstream
                   text: ' Become a client anfel',
+=======
+                  text: ' Become a client ANFEL',
+>>>>>>> Stashed changes
                   width: double.infinity,
                   height: 50,
                   fontFamily: 'Lobster',
