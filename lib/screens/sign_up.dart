@@ -28,7 +28,11 @@ class SignUp extends StatelessWidget {
               const Center(
                 child: CustomTextWidget(
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   text: ' Become a client anfel',
+=======
+                  text: ' Become a client ANFEL',
+>>>>>>> Stashed changes
 =======
                   text: ' Become a client ANFEL',
 >>>>>>> Stashed changes
