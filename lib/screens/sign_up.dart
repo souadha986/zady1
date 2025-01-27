@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:zady/widgets/custom_back_button.dart';
-import 'package:zady/widgets/custom_image_widget.dart';
-import 'package:zady/widgets/custom_text_form_field.dart';
-import 'package:zady/widgets/custom_text_widget.dart';
+import 'package:flutter_application_2/widgets/custom_back_button.dart';
+import 'package:flutter_application_2/widgets/custom_image_widget.dart';
+import 'package:flutter_application_2/widgets/custom_text_form_field.dart';
+import 'package:flutter_application_2/widgets/custom_text_widget.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -27,11 +27,7 @@ class SignUp extends StatelessWidget {
               const SizedBox(height: 10),
               const Center(
                 child: CustomTextWidget(
-<<<<<<< Updated upstream
                   text: ' Become a client anfel',
-=======
-                  text: ' Become a client ANFEL',
->>>>>>> Stashed changes
                   width: double.infinity,
                   height: 50,
                   fontFamily: 'Lobster',
