@@ -21,6 +21,7 @@ class WelcomePage extends StatelessWidget {
                   height: 280,
                 ),
               ),
+              
               SizedBox(height: 20),
               Align(
                 alignment: Alignment.centerLeft,
@@ -33,10 +34,11 @@ class WelcomePage extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   textAlign: TextAlign.left,
                   color: Colors.white,
-                  decoration: TextDecoration.none,
-                  decorationColor: Colors.white,
+                  decoration: TextDecoration.none, 
+                  decorationColor:Colors.white ,
                 ),
               ),
+              
               SizedBox(height: 20),
               Center(
                 child: Container(
@@ -74,6 +76,7 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              
               SizedBox(height: 30),
               Center(
                 child: Container(
@@ -111,50 +114,39 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
               ),
+             
               SizedBox(height: 90),
-              Center(
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      CustomTextWidget(
-                        text: 'Already have an account?',
-                        width: 230,
-                        height: 30,
-                        fontFamily: 'Lobster',
-                        fontSize: 20,
-                        fontWeight: FontWeight.w400,
-                        textAlign: TextAlign.center,
-                        color: Colors.white,
-                        decoration: TextDecoration.none,
-                        decorationColor: Colors.white,
-                      ),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/signin');
-                        }, // Navigate to Sign In page
-                        child: Text.rich(
-                          TextSpan(
-                            children: [
-                              TextSpan(
-                                text: 'Sign In',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontFamily: 'Lobster',
-                                  decoration: TextDecoration
-                                      .underline, // Underline this part
-                                  decorationColor: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+             Center(
+              child: GestureDetector(
+              onTap: () { Navigator.pushNamed(context, '/signin');}, // Navigate to Sign In page
+              child: RichText(
+              textAlign: TextAlign.center,
+             text: TextSpan(
+             text: "Already have an account?",
+              style: TextStyle(
+              color: Colors.white,
+              fontFamily: 'Lobster',
+              fontSize: 21,
+              fontWeight: FontWeight.normal,
+            ),
+            children: [
+            TextSpan(
+             text: "Sign In",
+             style: TextStyle(
+               color: Colors.white,
+               fontFamily: 'Lobster',
+               fontSize: 21,
+               fontWeight: FontWeight.normal,
+               decoration: TextDecoration.underline, 
+               decorationColor: Colors.white, 
+            ),
+            ),
+            ],
+           ),
+            ),
+           ),
+           ),
+
             ],
           ),
         ),
