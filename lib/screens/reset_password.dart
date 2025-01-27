@@ -17,6 +17,7 @@ class ResetPassword extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const CustomBackButton(),
+
               Center(
                 child: CustomImageWidget(
                   imagePath: 'assets/login/rotation-lock(1).png',
@@ -24,7 +25,9 @@ class ResetPassword extends StatelessWidget {
                   height: 186,
                 ),
               ),
+
               const SizedBox(height: 50),
+
               Center(
                 child: CustomTextWidget(
                   text: 'Forget your password?',
@@ -35,26 +38,30 @@ class ResetPassword extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   textAlign: TextAlign.center,
                   color: Colors.white,
-                  decoration: TextDecoration.none,
-                  decorationColor: Colors.white,
+                  decoration: TextDecoration.none, 
+                 decorationColor:Colors.white ,
                 ),
               ),
+              
               const SizedBox(height: 10),
+
               Center(
                 child: CustomTextWidget(
                   text: 'No worries,we will send you reset instructions',
-                  width: 350,
+                  width: 400,
                   height: 30,
                   fontFamily: 'Lobster',
                   fontSize: 20.0,
                   fontWeight: FontWeight.w400,
                   textAlign: TextAlign.center,
                   color: Colors.white,
-                  decoration: TextDecoration.none,
-                  decorationColor: Colors.white,
+                  decoration: TextDecoration.none, 
+                 decorationColor:Colors.white ,
                 ),
               ),
+
               const SizedBox(height: 60),
+              
               CustomTextFormField(
                 hinttext: 'E-mail',
                 imagePath: 'assets/login/email.png',
@@ -62,32 +69,31 @@ class ResetPassword extends StatelessWidget {
                 imageWidth: 30,
                 spacing: 16,
               ),
+             
               const SizedBox(height: 140),
+             
               Center(
                 child: TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/checkEmail');
-                  },
-                  style: TextButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30)),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 70, vertical: 10)),
-                  child: CustomTextWidget(
-                    text: "Reset Password",
-                    color: const Color(0xFF013220),
-                    width: double.infinity,
-                    height: 35,
-                    fontFamily: 'Lobster',
-                    fontSize: 24,
-                    fontWeight: FontWeight.w400,
-                    textAlign: TextAlign.center,
-                    decoration: TextDecoration.none,
-                    decorationColor: Colors.white,
-                  ),
-                ),
-              ),
+                onPressed: () {Navigator.pushNamed(context, '/checkEmail');},
+                style: TextButton.styleFrom(
+               backgroundColor: Colors.white,
+               shape: RoundedRectangleBorder(
+               borderRadius: BorderRadius.circular(30) ),
+               padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 10) ),
+               child: CustomTextWidget(
+                text: "Reset Password",
+                color: const Color(0xFF013220),
+                width: double.infinity,
+                height: 35,
+                fontFamily: 'Lobster',
+                fontSize: 24,
+               fontWeight: FontWeight.w400,
+               textAlign: TextAlign.center,
+               decoration: TextDecoration.none, 
+                 decorationColor:Colors.white ,
+               ),
+             ),
+            ),
             ],
           ),
         ),
